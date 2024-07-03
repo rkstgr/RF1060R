@@ -11,3 +11,5 @@
 #include "brp_lib/inc/brp_lib/commands.h"
 #include "brp_lib/inc/brp_lib/version.h"
 #include "brp_lib/inc/brp_lib/platform.h"
+
+#include "legacy_wrapper/inc/brp.h"

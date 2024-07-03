@@ -45,6 +45,16 @@ impl ReaderSession {
         unsafe {
             let brp_protocol = brp_create_usb_hid(0);
             println!("brp_create_usb_hid: {:?}", brp_protocol);
+
+            match brp_open(brp_protocol) {
+                BRP_SUCCESS => {},
+                BRP_ERROR_BUSY => return Err(ReaderError::Busy),
+                BRP_ERROR_GENERAL_IO => return Err(ReaderError::GeneralIo),
+                BRP_ERROR_BUFFER_OVERFLOW => return Err(ReaderError::BufferOverflow),
+                BRP_ERROR_NO_MORE_HANDLES => return Err(ReaderError::NoMoreHandles),
+                BRP_ERROR_INSUFFICIENT_MEM => return Err(ReaderError::InsufficientMem),
+                code => return Err(ReaderError::Unknown(code as c_int)),
+            }
             
             return Ok(ReaderSession{
                 handle: brp_protocol
@@ -75,5 +85,10 @@ mod tests {
             let version_str = std::ffi::CStr::from_ptr(version).to_str().unwrap();
             assert_eq!(version_str, "3.18.00");
         }
+    }
+
+    #[test]
+    fn test_open_close() {
+        let session = ReaderSession::open().expect("Failed to create session");
     }
 }

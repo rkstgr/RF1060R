@@ -40,6 +40,7 @@ fn main() {
     let bindings = bindgen::Builder::default()
         .header("wrapper.h")
         .clang_arg(format!("-I{}", sdk_dir.display()))
+        .blocklist_var("IPPORT_.*")
         // Tell cargo to invalidate the built crate whenever any of the
         // included header files change.
         .parse_callbacks(Box::new(bindgen::CargoCallbacks::new()))
