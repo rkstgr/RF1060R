@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/appnote_secure_communication.dir/secure_communication/appnote_secure_communication.c.o -o ../binaries/linux64/appnote_secure_communication  -Wl,-rpath,/home/erik/dev/rf1060r/baltech_sdk/binaries/linux64 ../binaries/linux64/static-libs/libbaltech_api.a ../binaries/linux64/libbrp_lib.so 

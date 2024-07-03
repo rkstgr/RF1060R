@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/appnote_mempool.dir/mempool/appnote_mempool.c.o -o ../binaries/linux64/appnote_mempool  -Wl,-rpath,/home/erik/dev/rf1060r/baltech_sdk/binaries/linux64 ../binaries/linux64/static-libs/libbaltech_api.a ../binaries/linux64/libbrp_lib.so 

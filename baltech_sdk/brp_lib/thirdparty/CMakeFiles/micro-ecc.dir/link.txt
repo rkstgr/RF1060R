@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmicro-ecc.a CMakeFiles/micro-ecc.dir/micro-ecc/uECC.c.o
+/usr/bin/ranlib libmicro-ecc.a

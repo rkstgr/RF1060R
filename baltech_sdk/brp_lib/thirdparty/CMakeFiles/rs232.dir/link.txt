@@ -1,0 +1,2 @@
+/usr/bin/ar qc librs232.a CMakeFiles/rs232.dir/rs232/rs232-linux.c.o
+/usr/bin/ranlib librs232.a
