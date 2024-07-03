@@ -1,0 +1,305 @@
+@font-face {
+     font-family: 'Ruda';
+     src:url('/css/Ruda-Regular.woff2') format('woff2');
+}
+
+@font-face {
+     font-family: 'Fira Sans';
+     src:url('/css/FiraSans-Regular.woff2') format('woff2');
+}
+
+
+body, table, div, p, dl {
+	font: 400 14px/22px 'Fira Sans',sans-serif;
+}
+
+.title {
+	font: 400 14px/28px 'Ruda',sans-serif;
+	color: rgba(0,0,0,.54);
+	font-size: 2.0rem;
+}
+
+table.directory {
+    font: 400 14px 'Fira Sans',sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: 'Ruda',sans-serif;
+}
+
+#projectname {
+	font: 150% 'Ruda',sans-serif;
+	color: white;
+	margin: 0px;
+	padding: 2px 0px;
+}
+
+#powerTip div {
+        font: 12px/16px 'Fira Sans',sans-serif;
+}
+
+#projectnumber {
+	font: 50% 'Ruda',sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+#titlearea {
+    background:#30abdc;
+    color:white;
+    -webkit-box-shadow:0 0 .2rem rgba(0,0,0,.1),0 .2rem .4rem rgba(0,0,0,.2);
+    position: relative;
+    z-index: +1;
+}
+
+#titlearea table {
+
+}
+
+.contents {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 2px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
+    border-radius: 4px;
+    border-top: 1px solid #eee;
+    margin-top: 25px;
+}
+
+.contents ul {
+    padding: 5px 0 10px 35px;
+}
+
+.contents ul > li > ul {
+    padding: 5px 30px;
+}
+
+.memdoc {
+   -webkit-box-shadow: 0 0px 0px 0 rgba(0,0,0,.14),0 0px 0px 0 rgba(0,0,0,.12),0 0px 0px 0px rgba(0,0,0,.2);
+}
+
+.memproto {
+    -webkit-box-shadow:0 0px 0px 0 rgba(0,0,0,.14),0 0px 0 0 rgba(0,0,0,.12),0 0px 0px 0px rgba(0,0,0,.2);
+    border-top-right-radius: 0px;
+}
+
+.memtitle {
+    padding-right:0;
+    margin-right:0;
+    float:none;
+    margin-top: 0;
+}
+
+.memitem {
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+.memtitle, .memproto {
+    background: rgba(0,184,212,.1);
+}
+
+.memtitle, .memdoc, #nav-tree, .ui-resizable-e  {
+    background-image:none;
+}
+
+.memproto, .memdoc, .memtitle {
+    border-top: none;
+    border-bottom: none;
+    border-right:none;
+    border-left: .2rem solid #30abdc;
+}
+
+#projectlogo {
+    vertical-align: middle;
+}
+
+#projectlogo img {
+    height: 24px;
+}
+
+#nav-tree {
+    background-color: white;
+    padding-top: 15px;
+}
+
+#nav-tree .selected {
+    background-image: none;
+    text-shadow: none;
+}
+
+
+#nav-tree .selected .label a {
+    color: #30abdc;
+}
+
+#nav-tree .label {
+	font: 13px 'Fira Sans',sans-serif;
+}
+
+
+#nav-tree .label a {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+#nav-tree .label a:hover {
+    color: #247FA3;
+}
+
+#nav-tree-contents {
+    margin: 10px 0px 0px 10px;
+}
+
+#side-nav {
+    width: 256px !important;
+
+}
+
+div.header {
+    background-image: none;
+    background-color: unset;
+    border-bottom:none;
+}
+
+ dl.reflist dt {
+    border: none;
+    background-color: unset;
+    box-shadow: none;
+    padding: 0px;
+ }
+
+ dl.reflist dd {
+    border: none;
+    background-image: none;
+    box-shadow: none;
+ }
+
+div.directory {
+    padding-bottom: 10px;
+}
+
+ div.directory, .directory td.desc {
+    border: none;
+ }
+
+ .directory table {
+    border-collapse: unset;
+ }
+
+ .directory tr.even {
+    background-color: unset;
+ }
+
+
+ .textblock {
+    padding: 10px 0 5px 10px;
+ }
+
+ div.headertitle {
+    padding: 15px 5px 5px 10px;
+ }
+
+ a, .contents a:visited {
+    color: #30abdc;
+ }
+
+ a:hover {
+    color: #247FA3;
+    text-decoration: none;
+ }
+
+#backlink a {
+    color: white;
+    font-family: 'Ruda', sans-serif;
+}
+
+h2.groupheader {
+    border: none;
+    color: rgba(0,0,0,.87);
+    font-family: 'Ruda', sans-serif;
+    padding: 5px 0px 5px 10px;
+}
+
+.mdescLeft, .mdescRight, .memItemLeft, .memItemRight, .memTemplItemLeft, .memTemplItemRight, .memTemplParam {
+    background: unset;
+}
+
+table.memberdecls {
+    border-spacing: unset;
+}
+
+.memSeparator {
+    border: none;
+    padding: 1px;
+}
+
+div.ah, span.ah {
+    font-weight: bold;
+    color: rgba(0,0,0,.87);
+    margin-bottom: 3px;
+    margin-top: 3px;
+    padding: 0.2em;
+    font-size: 16px;
+    background-image: none;
+    background-color: unset;
+    border: none;
+    box-shadow: none;
+}
+
+div.qindex, div.navtab {
+    background-color: unset;
+    border: none;
+    margin-top: 10px;
+}
+
+#MSearchBox {
+    margin-top: -10px;
+}
+
+.ititle p {
+    padding-left:10px;
+}
+
+h3 a[id^="index_"] {
+    padding-left:10px;
+}
+
+#nav-sync {
+    display: none;
+}
+
+#dl {
+    padding: 0 0 5px 10px;
+}
+
+#MSearchBox .left, #MSearchBox .right {
+    background: none;
+}
+
+
+.left #MSearchSelect {
+    left: 4px;
+    visibility: hidden;
+}
+
+#MSearchField {
+    background-image: none;
+    background: #247FA3;
+    border-radius: 2px;
+    font-family: 'Fira Sans',sans-serif;
+    font-size: 1rem;
+    width: auto;
+    padding: 0.65rem 0.5rem;
+    top: -0.6rem;
+    right: 0.1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.MSearchBoxActive #MSearchField {
+    color: white;
+}
+
+.SRSymbol {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.SRPage .SREntry {
+    padding: 3px 5px;
+}
