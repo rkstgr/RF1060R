@@ -1,2 +1,0 @@
-/usr/bin/ar qc libhidapi.a CMakeFiles/hidapi.dir/hidapi/linux/hid.c.o
-/usr/bin/ranlib libhidapi.a

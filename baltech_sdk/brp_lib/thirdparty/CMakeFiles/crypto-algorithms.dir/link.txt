@@ -1,2 +1,0 @@
-/usr/bin/ar qc libcrypto-algorithms.a CMakeFiles/crypto-algorithms.dir/crypto-algorithms/aes.c.o CMakeFiles/crypto-algorithms.dir/crypto-algorithms/sha256.c.o
-/usr/bin/ranlib libcrypto-algorithms.a

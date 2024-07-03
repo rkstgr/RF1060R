@@ -9,10 +9,11 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_version() {
+    fn test_brp_get_driver_version() {
         unsafe {
             let version = brp_get_driver_version();
-            println!("Version: {:?}", version);
+            let version_str = std::ffi::CStr::from_ptr(version).to_str().unwrap();
+            assert_eq!(version_str, "3.18.00");
         }
     }
 }

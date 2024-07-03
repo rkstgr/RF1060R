@@ -11,16 +11,18 @@ fn main() {
     // Run CMake to generate build files
     let cmake_status = Command::new("cmake")
         .current_dir(&sdk_dir)
-        .arg(".")
+        .arg("-DCMAKE_BUILD_TYPE=Release")
         .status()
         .expect("Failed to run CMake");
     assert!(cmake_status.success(), "CMake failed");
 
-    // Build the SDK libraries
+    // Build the SDK libraries with Release configuration
     let build_status = Command::new("cmake")
         .current_dir(&sdk_dir)
         .arg("--build")
         .arg(".")
+        .arg("--config")
+        .arg("Release")
         .status()
         .expect("Failed to build the SDK");
     assert!(build_status.success(), "Build failed");
@@ -28,6 +30,7 @@ fn main() {
     // Add the search path for the shared library
     println!("cargo:rustc-link-search=native={}", build_dir.display());
     println!("cargo:rustc-link-search=native={}", sdk_dir.display());
+    println!("cargo:rustc-link-search=native={}", sdk_dir.join("binaries/linux64").display());
 
     // Link the necessary shared libraries
     println!("cargo:rustc-link-lib=dylib=BrpDriver");

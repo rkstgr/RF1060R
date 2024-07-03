@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../binaries/linux64/static-libs/libbaltech_api.a CMakeFiles/baltech_api.dir/baltech_api.c.o
-/usr/bin/ranlib ../../binaries/linux64/static-libs/libbaltech_api.a
